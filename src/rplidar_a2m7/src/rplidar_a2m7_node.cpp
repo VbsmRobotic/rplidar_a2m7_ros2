@@ -82,12 +82,6 @@ void RplidarA2M7Node::load_parameters()
     max_distance_ = this->get_parameter("max_distance").as_double();
     min_distance_ = this->get_parameter("min_distance").as_double();
     scan_frequency_ = this->get_parameter("scan_frequency").as_double();
-    
-    // Reduce frequency to prevent RViz2 queue overflow
-    if (scan_frequency_ > 2.0) {
-        scan_frequency_ = 2.0;
-        RCLCPP_WARN(this->get_logger(), "Scan frequency reduced to 2.0 Hz to prevent RViz2 queue overflow");
-    }
     scan_mode_ = this->get_parameter("scan_mode").as_string();
     point_number_ = this->get_parameter("point_number").as_int();
     flip_x_axis_ = this->get_parameter("flip_x_axis").as_bool();

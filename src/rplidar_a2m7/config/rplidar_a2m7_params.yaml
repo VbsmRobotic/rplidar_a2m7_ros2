@@ -15,7 +15,7 @@ rplidar_a2m7_node:
     angle_compensate: true
     max_distance: 16.0  # A2M7 max range
     min_distance: 0.1
-    scan_frequency: 2.0  # Reduced to prevent RViz2 queue overflow
+    scan_frequency: 10.0  # Reduced to prevent RViz2 queue overflow
     
     # A2M7 specific parameters
     scan_mode: "Sensitivity"
