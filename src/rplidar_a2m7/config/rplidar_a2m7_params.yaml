@@ -5,51 +5,67 @@
 
 rplidar_a2m7_node:
   ros__parameters:
-    # Serial communication parameters
-    serial_port: "/dev/ttyUSB1"  # RPLIDAR A2M7 detected on ttyUSB1
-    serial_baudrate: 256000  # A2M7 specific baud rate
+    # =============================================================================
+    # SERIAL COMMUNICATION PARAMETERS
+    # =============================================================================
+    serial_port: "/dev/ttyUSB1"  # USB device path for RPLIDAR A2M7 (check with: ls -l /dev/ttyUSB*)
+    serial_baudrate: 256000  # Communication speed - A2M7 requires 256000 baud (NOT 115200)
     
-    # Frame and scan parameters
-    frame_id: "laser"
-    inverted: false
-    angle_compensate: true
-    max_distance: 16.0  # A2M7 max range
-    min_distance: 0.1
-    scan_frequency: 10.0  # Reduced to prevent RViz2 queue overflow
-    use_infinity_for_unmeasured: false  # Set to true to use inf for unmeasured ranges (breaks navigation)
+    # =============================================================================
+    # FRAME AND SCAN PARAMETERS
+    # =============================================================================
+    frame_id: "laser"  # TF frame name for coordinate transforms (used by navigation)
+    inverted: false  # Flip scan direction (false = counter-clockwise, true = clockwise)
+    angle_compensate: true  # Apply angle compensation for sensor mounting (recommended: true)
+    max_distance: 16.0  # Maximum detection range in meters (A2M7 spec: 16m, used for unmeasured ranges)
+    min_distance: 0.1  # Minimum detection range in meters (filters noise/reflections)
+    scan_frequency: 10.0  # Scan update rate in Hz (higher = more data, lower = less CPU)
+    use_infinity_for_unmeasured: false  # false=use max_distance (navigation-friendly), true=use inf (breaks navigation)
     
-    # A2M7 specific parameters
-    scan_mode: "Sensitivity"
-    point_number: 15900  # A2M7 point count
-    flip_x_axis: false
+    # =============================================================================
+    # A2M7 SPECIFIC PARAMETERS
+    # =============================================================================
+    scan_mode: "Sensitivity"  # A2M7 scan mode: "Sensitivity", "Standard", "Stability"
+    point_number: 15900  # Number of points per scan (A2M7 spec: 15900 points for 360°)
+    flip_x_axis: false  # Flip X-axis orientation (false = standard, true = mirrored)
     
-    # Memory optimization parameters
-    memory_check: 0
-    memory_perturb: 0
-    memory_trim_threshold: 65536
-    memory_mmap_threshold: 65536
-    memory_top_pad: 131072
-    memory_mmap_max: 65536
+    # =============================================================================
+    # MEMORY OPTIMIZATION PARAMETERS (for high data rate A2M7)
+    # =============================================================================
+    memory_check: 0  # MALLOC_CHECK_ value (0=disabled, 1=abort on error, 2=print warnings)
+    memory_perturb: 0  # MALLOC_PERTURB_ value (0=disabled, >0=randomize memory for debugging)
+    memory_trim_threshold: 65536  # Memory trim threshold in bytes (64KB)
+    memory_mmap_threshold: 65536  # Memory mapping threshold in bytes (64KB)
+    memory_top_pad: 131072  # Top padding for memory allocation (128KB)
+    memory_mmap_max: 65536  # Maximum memory mapping size (64KB)
     
-    # Process limits
-    virtual_memory_limit: 4194304  # 4GB
-    physical_memory_limit: 2097152  # 2GB
-    core_dump_enabled: true
+    # =============================================================================
+    # PROCESS LIMITS (for system stability)
+    # =============================================================================
+    virtual_memory_limit: 4194304  # Virtual memory limit in KB (4GB = 4*1024*1024)
+    physical_memory_limit: 2097152  # Physical memory limit in KB (2GB = 2*1024*1024)
+    core_dump_enabled: true  # Enable core dumps for debugging crashes
     
-    # USB device parameters
-    usb_vendor_id: "10c4"
-    usb_product_id: "ea60"
-    usb_device_name: "CP2102 USB-to-serial converter"
+    # =============================================================================
+    # USB DEVICE PARAMETERS (for device identification)
+    # =============================================================================
+    usb_vendor_id: "10c4"  # Silicon Labs vendor ID (CP210x USB-to-serial converter)
+    usb_product_id: "ea60"  # CP2102 product ID (RPLIDAR A2M7 uses CP2102)
+    usb_device_name: "CP2102 USB-to-serial converter"  # Human-readable device name
     
-    # RPLIDAR A2M7 hardware specifications
-    firmware_version: "1.27"
-    hardware_revision: 6
-    serial_number: "BD8A9A87C5E392D2A5E492F82D5F316C"
-    health_status: 0
+    # =============================================================================
+    # RPLIDAR A2M7 HARDWARE SPECIFICATIONS (for reference)
+    # =============================================================================
+    firmware_version: "1.27"  # A2M7 firmware version (check with device info)
+    hardware_revision: 6  # A2M7 hardware revision number
+    serial_number: "BD8A9A87C5E392D2A5E492F82D5F316C"  # Device serial number (unique per device)
+    health_status: 0  # Device health (0=good, >0=warning/error)
     
-    # Scan data processing parameters
-    data_buffer_size: 15900
-    scan_timeout: 5.0
-    connection_timeout: 10.0
-    retry_count: 3
-    retry_delay: 2.0
+    # =============================================================================
+    # SCAN DATA PROCESSING PARAMETERS (for data quality and reliability)
+    # =============================================================================
+    data_buffer_size: 15900  # Buffer size for scan data (matches point_number)
+    scan_timeout: 5.0  # Timeout for single scan in seconds (higher = more tolerant)
+    connection_timeout: 10.0  # Timeout for device connection in seconds
+    retry_count: 3  # Number of retry attempts for failed operations
+    retry_delay: 2.0  # Delay between retries in seconds
