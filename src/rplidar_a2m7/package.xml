@@ -6,6 +6,7 @@
   <description>RPLIDAR A2M7 ROS2 Driver Package</description>
   
   <maintainer email="vahid.behtaji2013@gmail.com">VbsmRobotic</maintainer>
+  <license>Apache-2.0</license>
   
   <author email="vahid.behtaji2013@gmail.com">VbsmRobotic</author>
   
