@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>rplidar_a2m7</name>
+  <version>1.0.0</version>
+  <description>RPLIDAR A2M7 ROS2 Driver Package</description>
+  
+  <maintainer email="vahidbehtaji2013@gmail.com">vahid behtaji</maintainer>
+  <license>MIT</license>
+  
+  <author email="vahidbehtaji2013@gmail.com">vahid behtaji</author>
+  
+  <url type="website">https://github.com/vahidbehtaji/rplidar_a2m7_ros2</url>
+  <url type="repository">https://github.com/vahidbehtaji/rplidar_a2m7_ros2</url>
+  <url type="bugtracker">https://github.com/vahidbehtaji/rplidar_a2m7_ros2/issues</url>
+  
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  
+  <exec_depend>rviz2</exec_depend>
+  
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

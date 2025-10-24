@@ -1,0 +1,51 @@
+# RPLIDAR A2M7 Configuration Parameters
+
+rplidar_a2m7_node:
+  ros__parameters:
+    # Serial communication parameters
+    serial_port: "/dev/ttyUSB1"  # RPLIDAR A2M7 detected on ttyUSB1
+    serial_baudrate: 256000  # A2M7 specific baud rate
+    
+    # Frame and scan parameters
+    frame_id: "laser"
+    inverted: false
+    angle_compensate: true
+    max_distance: 16.0  # A2M7 max range
+    min_distance: 0.1
+    scan_frequency: 2.0  # Reduced to prevent RViz2 queue overflow
+    
+    # A2M7 specific parameters
+    scan_mode: "Sensitivity"
+    point_number: 15900  # A2M7 point count
+    flip_x_axis: false
+    
+    # Memory optimization parameters
+    memory_check: 0
+    memory_perturb: 0
+    memory_trim_threshold: 65536
+    memory_mmap_threshold: 65536
+    memory_top_pad: 131072
+    memory_mmap_max: 65536
+    
+    # Process limits
+    virtual_memory_limit: 4194304  # 4GB
+    physical_memory_limit: 2097152  # 2GB
+    core_dump_enabled: true
+    
+    # USB device parameters
+    usb_vendor_id: "10c4"
+    usb_product_id: "ea60"
+    usb_device_name: "CP2102 USB-to-serial converter"
+    
+    # RPLIDAR A2M7 hardware specifications
+    firmware_version: "1.27"
+    hardware_revision: 6
+    serial_number: "BD8A9A87C5E392D2A5E492F82D5F316C"
+    health_status: 0
+    
+    # Scan data processing parameters
+    data_buffer_size: 15900
+    scan_timeout: 5.0
+    connection_timeout: 10.0
+    retry_count: 3
+    retry_delay: 2.0

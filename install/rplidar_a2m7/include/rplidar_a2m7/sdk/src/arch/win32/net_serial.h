@@ -1,0 +1,1 @@
+/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/win32/net_serial.h

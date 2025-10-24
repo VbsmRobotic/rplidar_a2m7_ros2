@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- RPLIDAR A2M7 Launch File -->
+<launch>
+    <node name="rplidar_a2m7_node" 
+          pkg="rplidar_a2m7" 
+          exec="rplidar_a2m7_node" 
+          output="screen"
+          respawn="true"
+          respawn_delay="2.0">
+        <param from="$(find-pkg-share rplidar_a2m7)/config/rplidar_a2m7_params.yaml"/>
+    </node>
+</launch>

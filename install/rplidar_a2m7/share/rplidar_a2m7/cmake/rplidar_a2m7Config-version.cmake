@@ -1,0 +1,1 @@
+/home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7/ament_cmake_core/rplidar_a2m7Config-version.cmake

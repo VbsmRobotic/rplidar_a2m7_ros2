@@ -1,0 +1,279 @@
+[0.009s] Invoking command in '/home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7
+[0.065s] -- The C compiler identification is GNU 11.4.0
+[0.114s] -- The CXX compiler identification is GNU 11.4.0
+[0.120s] -- Detecting C compiler ABI info
+[0.197s] -- Detecting C compiler ABI info - done
+[0.204s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.204s] -- Detecting C compile features
+[0.205s] -- Detecting C compile features - done
+[0.208s] -- Detecting CXX compiler ABI info
+[0.291s] -- Detecting CXX compiler ABI info - done
+[0.298s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.298s] -- Detecting CXX compile features
+[0.299s] -- Detecting CXX compile features - done
+[0.301s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.445s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.500s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.529s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.572s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.577s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.585s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.596s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.611s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.655s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.658s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.735s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.767s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.812s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.820s] -- Looking for pthread.h
+[0.889s] -- Looking for pthread.h - found
+[0.890s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.967s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.969s] -- Found Threads: TRUE  
+[1.022s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.052s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.211s] -- Configuring done
+[1.222s] -- Generating done
+[1.226s] -- Build files have been written to: /home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7
+[1.235s] Invoked command in '/home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7
+[1.237s] Invoking command in '/home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7 -- -j12 -l12
+[1.293s] [ 42%] [32mBuilding CXX object CMakeFiles/rplidar_a2m7_node.dir/src/rplidar_a2m7_node.cpp.o[0m
+[1.294s] [ 42%] [32mBuilding CXX object CMakeFiles/rplidar_a2m7_node.dir/include/rplidar_a2m7/sdk/src/hal/thread.cpp.o[0m
+[1.294s] [ 42%] [32mBuilding CXX object CMakeFiles/rplidar_a2m7_node.dir/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp.o[0m
+[1.294s] [ 57%] [32mBuilding CXX object CMakeFiles/rplidar_a2m7_node.dir/include/rplidar_a2m7/sdk/src/arch/linux/net_serial.cpp.o[0m
+[1.294s] [ 71%] [32mBuilding CXX object CMakeFiles/rplidar_a2m7_node.dir/include/rplidar_a2m7/sdk/src/arch/linux/net_socket.cpp.o[0m
+[1.301s] [ 85%] [32mBuilding CXX object CMakeFiles/rplidar_a2m7_node.dir/include/rplidar_a2m7/sdk/src/arch/linux/timer.cpp.o[0m
+[1.781s] In file included from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar.h:39[m[K,
+[1.782s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/sdkcommon.h:48[m[K,
+[1.782s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/hal/thread.cpp:35[m[K:
+[1.782s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.782s]    59 |     _u8 data[[01;35m[K0[m[K];
+[1.782s]       |              [01;35m[K^[m[K
+[1.783s] In file included from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar.h:40[m[K,
+[1.783s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/sdkcommon.h:48[m[K,
+[1.783s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/hal/thread.cpp:35[m[K:
+[1.783s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.783s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[1.783s]       |                  [01;35m[K^[m[K
+[1.784s] In file included from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/hal/thread.cpp:43[m[K:
+[1.785s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/thread.hpp:[m[K In static member function ‘[01m[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)[m[K’:
+[1.785s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/thread.hpp:48:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[1.785s]    48 |     pthread_create((pthread_t *)&newborn._handle, NULL, [01;35m[K(void * (*)(void *))proc[m[K, data);
+[1.785s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.785s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/thread.hpp:[m[K In member function ‘[01m[Ku_result rp::hal::Thread::join(long unsigned int)[m[K’:
+[1.786s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/thread.hpp:129:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.786s]   129 | u_result Thread::join([01;35m[Kunsigned long timeout[m[K)
+[1.786s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[1.805s] In file included from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar.h:39[m[K,
+[1.805s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/sdkcommon.h:48[m[K,
+[1.806s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:35[m[K:
+[1.806s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.806s]    59 |     _u8 data[[01;35m[K0[m[K];
+[1.806s]       |              [01;35m[K^[m[K
+[1.806s] In file included from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar.h:40[m[K,
+[1.806s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/sdkcommon.h:48[m[K,
+[1.806s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:35[m[K:
+[1.807s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.807s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[1.807s]       |                  [01;35m[K^[m[K
+[1.826s] In file included from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar.h:39[m[K,
+[1.826s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/sdkcommon.h:48[m[K,
+[1.826s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[1.826s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.826s]    59 |     _u8 data[[01;35m[K0[m[K];
+[1.826s]       |              [01;35m[K^[m[K
+[1.827s] In file included from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar.h:40[m[K,
+[1.827s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/sdkcommon.h:48[m[K,
+[1.827s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[1.827s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.827s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[1.827s]       |                  [01;35m[K^[m[K
+[1.840s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::StreamSocketImpl::send(const void*, size_t)[m[K’:
+[1.840s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_socket.cpp:438:17:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.840s]   438 |         if ([01;35m[Kans == (int)len[m[K) {
+[1.840s]       |             [01;35m[K~~~~^~~~~~~~~~~[m[K
+[1.936s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)[m[K’:
+[1.936s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_serial.cpp:97:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.936s]    97 | bool raw_serial::open(const char * portname, uint32_t baudrate, [01;35m[Kuint32_t flags[m[K)
+[1.936s]       |                                                                 [01;35m[K~~~~~~~~~^~~~~[m[K
+[1.936s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::flush(_u32)[m[K’:
+[1.936s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_serial.cpp:281:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.936s]   281 | void raw_serial::flush( [01;35m[K_u32 flags[m[K)
+[1.936s]       |                         [01;35m[K~~~~~^~~~~[m[K
+[1.937s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)[m[K’:
+[1.937s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_serial.cpp:286:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.937s]   286 | int raw_serial::waitforsent([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[1.937s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[1.937s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)[m[K’:
+[1.937s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/linux/net_serial.cpp:292:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.937s]   292 | int raw_serial::waitforrecv([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[1.937s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[1.942s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::reset(_u32)[m[K’:
+[1.942s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:121:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.943s]   121 | u_result RPlidarDriverImplCommon::reset([01;35m[K_u32 timeout[m[K)
+[1.943s]       |                                         [01;35m[K~~~~~^~~~~~~[m[K
+[1.944s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::checkIfTofLidar(bool&, _u32)[m[K’:
+[1.944s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:275:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.944s]   275 | u_result RPlidarDriverImplCommon::checkIfTofLidar(bool & isTofLidar, [01;35m[K_u32 timeout[m[K)
+[1.945s]       |                                                                      [01;35m[K~~~~~^~~~~~~[m[K
+[1.949s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual int rp::standalone::rplidar::RPlidarDriverImplCommon::_getSyncBitByAngle(int, int)[m[K’:
+[1.949s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:671:16:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klast_angleInc_q16[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[1.949s]   671 |     static int [01;35m[Klast_angleInc_q16[m[K = 0;
+[1.950s]       |                [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[1.950s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:673:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsyncBit_check_threshold[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.950s]   673 |     int [01;35m[KsyncBit_check_threshold[m[K = (int)((5 << 16) / angleInc_q16) + 1;//find syncBit in 0~3 degree
+[1.950s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.950s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::_cacheUltraCapsuledScanData()[m[K’:
+[1.951s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:771:46:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_scan_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.951s]   771 |     size_t                                   [01;35m[Klast_scan_count[m[K = 0;
+[1.951s]       |                                              [01;35m[K^~~~~~~~~~~~~~~[m[K
+[1.951s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_capsuleToNormal(const rplidar_response_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[1.952s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:850:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsyncBit_check_threshold[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.952s]   850 |             int [01;35m[KsyncBit_check_threshold[m[K = (int)((2 << 16) / angleInc_q16) + 1;//find syncBit in 0~1 degree
+[1.952s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.952s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_dense_capsuleToNormal(const rplidar_response_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[1.953s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:903:30:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+[1.953s]   903 |             const int dist = [01;35m[Kstatic_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance)[m[K;
+[1.953s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.954s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In function ‘[01m[K_u32 rp::standalone::rplidar::_crc32cal(_u32, void*, _u16)[m[K’:
+[1.954s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:1027:23:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K-[m[K’ in operand of ‘[01m[K&[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.954s]  1027 |     _u8 leftBytes = [01;35m[K4 - len[m[K & 0x3;
+[1.954s]       |                     [01;35m[K~~^~~~~[m[K
+[1.956s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_ultraCapsuleToNormal(const rplidar_response_ultra_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[1.956s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:1238:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.956s]  1238 |             if (([01;35m[Kdist_predict1 == 0xFFFFFE00[m[K) || (dist_predict1 == 0x1FF)) {
+[1.956s]       |                  [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[1.956s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:1246:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.957s]  1246 |             if (([01;35m[Kdist_predict2 == 0xFFFFFE00[m[K) || (dist_predict2 == 0x1FF)) {
+[1.957s]       |                  [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[1.957s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:1256:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsyncBit_check_threshold[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.957s]  1256 |                 int [01;35m[KsyncBit_check_threshold[m[K = (int)((3 << 16) / angleInc_q16)+1;//find syncBit in 0~1 degree
+[1.957s]       |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.963s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<rp::standalone::rplidar::RplidarScanMode>&, _u32)[m[K’:
+[1.963s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:1484:105:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.963s]  1484 | u_result RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<RplidarScanMode>& outModes, [01;35m[K_u32 timeoutInMs[m[K)
+[1.963s]       |                                                                                                    [01;35m[K~~~~~^~~~~~~~~~~[m[K
+[1.964s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::startScan(bool, bool, _u32, rp::standalone::rplidar::RplidarScanMode*)[m[K’:
+[1.964s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:1581:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.964s]  1581 | u_result RPlidarDriverImplCommon::startScan(bool force, bool useTypicalScan, [01;35m[K_u32 options[m[K, RplidarScanMode* outUsedScanMode)
+[1.964s]       |                                                                              [01;35m[K~~~~~^~~~~~~[m[K
+[1.966s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::stop(_u32)[m[K’:
+[1.966s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:1805:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.966s]  1805 | u_result RPlidarDriverImplCommon::stop([01;35m[K_u32 timeout[m[K)
+[1.966s]       |                                        [01;35m[K~~~~~^~~~~~~[m[K
+[1.970s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::setLidarSpinSpeed(_u16, _u32)[m[K’:
+[1.970s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:2193:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.970s]  2193 | u_result RPlidarDriverImplCommon::setLidarSpinSpeed(_u16 rpm, [01;35m[K_u32 timeout[m[K)
+[1.970s]       |                                                               [01;35m[K~~~~~^~~~~~~[m[K
+[1.971s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverSerial::connect(const char*, _u32, _u32)[m[K’:
+[1.971s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:2270:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.971s]  2270 | u_result RPlidarDriverSerial::connect(const char * port_path, _u32 baudrate, [01;35m[K_u32 flag[m[K)
+[1.971s]       |                                                                              [01;35m[K~~~~~^~~~[m[K
+[1.972s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverTCP::connect(const char*, _u32, _u32)[m[K’:
+[1.972s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:2312:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.972s]  2312 | u_result RPlidarDriverTCP::connect(const char * ipStr, _u32 port, [01;35m[K_u32 flag[m[K)
+[1.972s]       |                                                                   [01;35m[K~~~~~^~~~[m[K
+[2.003s] /home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp: In instantiation of ‘[01m[Ku_result rp::standalone::rplidar::ascendScanData_(TNode*, size_t) [with TNode = _rplidar_response_measurement_node_t; u_result = unsigned int; size_t = long unsigned int][m[K’:
+[2.003s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:2025:64:[m[K   required from here
+[2.004s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:1991:27:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K>= 0[m[K’ is always true [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+[2.004s]  1991 |     for (i = count - 1; [01;35m[Ki >= 0[m[K; i--) {
+[2.004s]       |                         [01;35m[K~~^~~~[m[K
+[2.004s] /home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp: In instantiation of ‘[01m[Ku_result rp::standalone::rplidar::ascendScanData_(TNode*, size_t) [with TNode = rplidar_response_measurement_node_hq_t; u_result = unsigned int; size_t = long unsigned int][m[K’:
+[2.004s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:2030:67:[m[K   required from here
+[2.005s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:1991:27:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K>= 0[m[K’ is always true [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+[2.086s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::startMotor()[m[K’:
+[2.086s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/rplidar_driver.cpp:2225:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[2.086s]  2225 | [01;35m[K}[m[K
+[2.086s]       | [01;35m[K^[m[K
+[3.933s] In file included from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar.h:39[m[K,
+[3.933s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/rplidar_a2m7_node.hpp:38[m[K,
+[3.934s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/src/rplidar_a2m7_node.cpp:10[m[K:
+[3.934s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[3.934s]    59 |     _u8 data[[01;35m[K0[m[K];
+[3.934s]       |              [01;35m[K^[m[K
+[3.934s] In file included from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar.h:40[m[K,
+[3.934s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/rplidar_a2m7_node.hpp:38[m[K,
+[3.935s]                  from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/src/rplidar_a2m7_node.cpp:10[m[K:
+[3.935s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[3.935s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[3.935s]       |                  [01;35m[K^[m[K
+[3.946s] In file included from [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/src/rplidar_a2m7_node.cpp:10[m[K:
+[3.946s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/rplidar_a2m7_node.hpp:[m[K In constructor ‘[01m[Krplidar_a2m7::RplidarA2M7Node::RplidarA2M7Node(const rclcpp::NodeOptions&)[m[K’:
+[3.946s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/rplidar_a2m7_node.hpp:86:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Krplidar_a2m7::RplidarA2M7Node::is_connected_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.946s]    86 |     bool [01;35m[Kis_connected_[m[K;
+[3.946s]       |          [01;35m[K^~~~~~~~~~~~~[m[K
+[3.947s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/rplidar_a2m7_node.hpp:63:45:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krp::standalone::rplidar::RPlidarDriver* rplidar_a2m7::RplidarA2M7Node::rplidar_driver_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.947s]    63 |     rp::standalone::rplidar::RPlidarDriver* [01;35m[Krplidar_driver_[m[K;
+[3.947s]       |                                             [01;35m[K^~~~~~~~~~~~~~~[m[K
+[3.947s] [01m[K/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/src/rplidar_a2m7_node.cpp:21:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.947s]    21 | [01;35m[KRplidarA2M7Node[m[K::RplidarA2M7Node(const rclcpp::NodeOptions & options)
+[3.947s]       | [01;35m[K^~~~~~~~~~~~~~~[m[K
+[6.767s] [100%] [32m[1mLinking CXX executable rplidar_a2m7_node[0m
+[7.016s] [100%] Built target rplidar_a2m7_node
+[7.028s] Invoked command in '/home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7 -- -j12 -l12
+[7.037s] Invoking command in '/home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7
+[7.045s] -- Install configuration: ""
+[7.045s] -- Execute custom install script
+[7.045s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/lib/rplidar_a2m7/rplidar_a2m7_node
+[7.055s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7//launch/rplidar_a2m7.launch.xml
+[7.069s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7//config/rplidar_a2m7_params.yaml
+[7.078s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7//rviz/rplidar_a2m7.rviz
+[7.087s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/rplidar_a2m7_node.hpp
+[7.096s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/README.txt
+[7.106s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/include/rplidar.h
+[7.115s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/include/rplidar_cmd.h
+[7.126s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/include/rplidar_driver.h
+[7.137s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/include/rplidar_protocol.h
+[7.147s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/include/rptypes.h
+[7.158s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/linux/arch_linux.h
+[7.173s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/linux/net_serial.cpp
+[7.183s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/linux/net_serial.h
+[7.194s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/linux/net_socket.cpp
+[7.204s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/linux/thread.hpp
+[7.215s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/linux/timer.cpp
+[7.225s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/linux/timer.h
+[7.236s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/macOS/arch_macOS.h
+[7.246s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/macOS/net_serial.cpp
+[7.257s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/macOS/net_serial.h
+[7.271s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/macOS/net_socket.cpp
+[7.281s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/macOS/thread.hpp
+[7.293s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/macOS/timer.cpp
+[7.303s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/macOS/timer.h
+[7.314s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/win32/arch_win32.h
+[7.324s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/win32/net_serial.cpp
+[7.333s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/win32/net_serial.h
+[7.342s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/win32/net_socket.cpp
+[7.351s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/win32/timer.cpp
+[7.360s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/win32/timer.h
+[7.369s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/arch/win32/winthread.hpp
+[7.378s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/hal/abs_rxtx.h
+[7.388s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/hal/assert.h
+[7.396s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/hal/byteops.h
+[7.405s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/hal/event.h
+[7.413s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/hal/locker.h
+[7.421s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/hal/socket.h
+[7.429s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/hal/thread.cpp
+[7.437s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/hal/thread.h
+[7.445s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/hal/types.h
+[7.455s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/hal/util.h
+[7.465s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/rplidar_driver.cpp
+[7.475s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/rplidar_driver_TCP.h
+[7.484s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/rplidar_driver_impl.h
+[7.494s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/rplidar_driver_serial.h
+[7.503s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/include//rplidar_a2m7/sdk/src/sdkcommon.h
+[7.511s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/ament_index/resource_index/package_run_dependencies/rplidar_a2m7
+[7.519s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/ament_index/resource_index/parent_prefix_path/rplidar_a2m7
+[7.526s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/environment/ament_prefix_path.sh
+[7.534s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/environment/ament_prefix_path.dsv
+[7.542s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/environment/path.sh
+[7.550s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/environment/path.dsv
+[7.558s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/local_setup.bash
+[7.567s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/local_setup.sh
+[7.575s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/local_setup.zsh
+[7.583s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/local_setup.dsv
+[7.591s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/package.dsv
+[7.599s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/ament_index/resource_index/packages/rplidar_a2m7
+[7.607s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/cmake/rplidar_a2m7Config.cmake
+[7.615s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/cmake/rplidar_a2m7Config-version.cmake
+[7.624s] -- Symlinking: /home/vahid-2204/vahid/rplidar_a2m7_ros2/install/rplidar_a2m7/share/rplidar_a2m7/package.xml
+[7.633s] Invoked command in '/home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vahid-2204/vahid/rplidar_a2m7_ros2/build/rplidar_a2m7
