@@ -16,6 +16,7 @@ rplidar_a2m7_node:
     max_distance: 16.0  # A2M7 max range
     min_distance: 0.1
     scan_frequency: 10.0  # Reduced to prevent RViz2 queue overflow
+    use_infinity_for_unmeasured: false  # Set to true to use inf for unmeasured ranges (breaks navigation)
     
     # A2M7 specific parameters
     scan_mode: "Sensitivity"

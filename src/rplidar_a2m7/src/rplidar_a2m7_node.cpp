@@ -64,6 +64,7 @@ void RplidarA2M7Node::declare_parameters()
     this->declare_parameter("max_distance", 16.0);
     this->declare_parameter("min_distance", 0.1);
     this->declare_parameter("scan_frequency", 10.0);
+    this->declare_parameter("use_infinity_for_unmeasured", false);
     
     // A2M7 specific parameters
     this->declare_parameter("scan_mode", "Sensitivity");
@@ -82,6 +83,7 @@ void RplidarA2M7Node::load_parameters()
     max_distance_ = this->get_parameter("max_distance").as_double();
     min_distance_ = this->get_parameter("min_distance").as_double();
     scan_frequency_ = this->get_parameter("scan_frequency").as_double();
+    use_infinity_for_unmeasured_ = this->get_parameter("use_infinity_for_unmeasured").as_bool();
     scan_mode_ = this->get_parameter("scan_mode").as_string();
     point_number_ = this->get_parameter("point_number").as_int();
     flip_x_axis_ = this->get_parameter("flip_x_axis").as_bool();
@@ -92,6 +94,7 @@ void RplidarA2M7Node::load_parameters()
     RCLCPP_INFO(this->get_logger(), "  Frame ID: %s", frame_id_.c_str());
     RCLCPP_INFO(this->get_logger(), "  Scan Mode: %s", scan_mode_.c_str());
     RCLCPP_INFO(this->get_logger(), "  Point Number: %d", point_number_);
+    RCLCPP_INFO(this->get_logger(), "  Use Infinity for Unmeasured: %s", use_infinity_for_unmeasured_ ? "YES (WARNING: Breaks Navigation)" : "NO (Navigation-Friendly)");
 }
 
 void RplidarA2M7Node::setup_ros2_interfaces()
@@ -256,9 +259,13 @@ void RplidarA2M7Node::publish_scan()
     scan_msg.ranges.resize(point_number_);
     scan_msg.intensities.resize(point_number_);
     
-    // Initialize with max distance (not infinity) for navigation compatibility
+    // Initialize ranges based on user preference
     for (int i = 0; i < point_number_; ++i) {
-        scan_msg.ranges[i] = max_distance_;
+        if (use_infinity_for_unmeasured_) {
+            scan_msg.ranges[i] = std::numeric_limits<float>::infinity();
+        } else {
+            scan_msg.ranges[i] = max_distance_;  // Navigation-friendly
+        }
         scan_msg.intensities[i] = 0.0;
     }
     

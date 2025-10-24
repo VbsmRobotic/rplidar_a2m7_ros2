@@ -53,11 +53,12 @@ private:
     std::string frame_id_;
     bool inverted_;
     bool angle_compensate_;
-    double max_distance_;
-    double min_distance_;
-    double scan_frequency_;
-    
-    // RPLIDAR A2M7 specific parameters
+      double max_distance_;
+      double min_distance_;
+      double scan_frequency_;
+      bool use_infinity_for_unmeasured_;
+      
+      // RPLIDAR A2M7 specific parameters
     std::string scan_mode_;
     int point_number_;
     bool flip_x_axis_;
