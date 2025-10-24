@@ -85,6 +85,8 @@ All parameters are configured in `config/rplidar_a2m7_params.yaml`:
 - RPLIDAR A2M7 hardware
 - CP2102 USB-to-serial driver
 
-## License
+## Author
 
-MIT License
+**VbsmRobotic**  
+Email: vahid.behtaji2013@gmail.com  
+GitHub: https://github.com/VbsmRobotic/rplidar_a2m7_ros2
