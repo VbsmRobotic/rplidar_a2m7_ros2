@@ -1,1 +1,0 @@
-/home/vahid-2204/vahid/rplidar_a2m7_ros2/src/rplidar_a2m7/include/rplidar_a2m7/sdk/src/arch/macOS/net_socket.cpp
