@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
-<!--
-RPLIDAR A2M7 Launch File
+    <!--
+    RPLIDAR A2M7 Launch File
 
-Author: VbsmRobotic
-Email: vahid.behtaji2013@gmail.com
-GitHub: https://github.com/VbsmRobotic/rplidar_a2m7_ros2
--->
+    Author: VbsmRobotic
+    GitHub: https://github.com/VbsmRobotic/rplidar_a2m7_ros2
+    -->
 <launch>
     <node name="rplidar_a2m7_node" 
           pkg="rplidar_a2m7" 

@@ -5,10 +5,10 @@
   <version>1.0.0</version>
   <description>RPLIDAR A2M7 ROS2 Driver Package</description>
   
-  <maintainer email="vahid.behtaji2013@gmail.com">VbsmRobotic</maintainer>
+  <maintainer email="noreply@github.com">VbsmRobotic</maintainer>
   <license>Apache-2.0</license>
   
-  <author email="vahid.behtaji2013@gmail.com">VbsmRobotic</author>
+  <author>VbsmRobotic</author>
   
   <url type="website">https://github.com/VbsmRobotic/rplidar_a2m7_ros2</url>
   <url type="repository">https://github.com/VbsmRobotic/rplidar_a2m7_ros2</url>

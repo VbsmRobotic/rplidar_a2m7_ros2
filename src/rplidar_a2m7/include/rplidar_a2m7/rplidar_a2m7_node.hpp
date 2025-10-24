@@ -2,7 +2,6 @@
  * RPLIDAR A2M7 ROS2 Node
  * 
  * Author: VbsmRobotic
- * Email: vahid.behtaji2013@gmail.com
  * GitHub: https://github.com/VbsmRobotic/rplidar_a2m7_ros2
  */
 
