@@ -256,17 +256,26 @@ void RplidarA2M7Node::publish_scan()
     scan_msg.ranges.resize(point_number_);
     scan_msg.intensities.resize(point_number_);
     
-    // Initialize with invalid ranges
+    // Initialize with max distance (not infinity) for navigation compatibility
     for (int i = 0; i < point_number_; ++i) {
-        scan_msg.ranges[i] = std::numeric_limits<float>::infinity();
+        scan_msg.ranges[i] = max_distance_;
         scan_msg.intensities[i] = 0.0;
     }
     
     // Convert RPLIDAR data to LaserScan format
     for (size_t i = 0; i < node_count; ++i) {
-        if (nodes[i].dist_mm_q2 == 0) continue;  // Skip invalid points
+        // Only skip points that are truly invalid (distance is 0 or quality is 0)
+        if (nodes[i].dist_mm_q2 == 0 || nodes[i].quality == 0) continue;
         
-        float distance = nodes[i].dist_mm_q2 / 4000.0f;  // Convert to meters
+        // Convert distance from mm (Q2 format) to meters
+        float distance = nodes[i].dist_mm_q2 / 4000.0f;  // Q2 format: divide by 4
+        
+        // Apply distance limits for navigation
+        if (distance < min_distance_ || distance > max_distance_) {
+            continue;  // Skip out-of-range points
+        }
+        
+        // Convert angle from Q14 format to radians
         float angle = (nodes[i].angle_z_q14 * 90.0f) / 16384.0f;  // Convert to degrees
         angle = angle * M_PI / 180.0f;  // Convert to radians
         
@@ -282,6 +291,17 @@ void RplidarA2M7Node::publish_scan()
             scan_msg.intensities[scan_index] = nodes[i].quality;
         }
     }
+    
+    // Debug: Count valid ranges for navigation
+    int valid_ranges = 0;
+    for (int i = 0; i < point_number_; ++i) {
+        if (scan_msg.ranges[i] < max_distance_) {
+            valid_ranges++;
+        }
+    }
+    
+    RCLCPP_DEBUG(this->get_logger(), "Scan data: %d valid ranges out of %d total, node_count: %zu", 
+                 valid_ranges, point_number_, node_count);
     
     // Publish scan
     scan_pub_->publish(scan_msg);
